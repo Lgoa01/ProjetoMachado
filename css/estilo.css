@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #4E311F;
+    --cor2: #390D02;
+    --cor3: #5f3115;
+    --cor4: #8d5e41;
+    --preto:#000000;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*tag, #id, .class*/
+
+body{
+    background-color: var(--cor4);
+    font-family: sans-serif;
+}
+
+header{
+    background-image: linear-gradient(to top, var(--cor4), var(--cor3));/*direção do gradiente, corInicial, CorTerminal*/
+    min-height: 130px; /*altuura minima*/
+    text-align: center;
+    padding-top: 50PX; /*Espaço dentro da caixa de 50px para cima*/
+    padding-bottom: 20px;
+}
+
+header > h1{
+color: var(--preto);
+font-weight: 900; /*100 à 900, lighter, bold, bolder*/;
+margin-bottom: 20px; /*Espaçamento fora da caixa*/
+}
+
+header > p{
+    color: var(--preto);
+}
+
+nav{
+    background-color: var(--cor4);
+    padding: 10px;
+    box-shadow: 1px 1px 1px 3px var(--cor2);
+}
+
+nav > a{
+    color: #000000;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover{ /*pseudo-classes adicioma um estado especial ao elemento*/
+    background-color: var(--cor3);
+
+}
+
+main{
+    background-color: #fff;
+    color: #000000;
+    min-height: 320px; /*largura minima*/
+    max-width: 1000px; /*largura maxima*/
+    margin: auto; /*Neste contexto, ultilizado para centralizar*/
+    margin-top: 8px;
+    padding: 20px; /*Espaço dentro da caixa do elemento*/
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center; /*Alinhamento de texto - center, left, right, justify*/
+    box-shadow: 3px 2px 5px 0px; /*sombra de caixa*/
+}
+
+main h2{
+    background-image: linear-gradient(to right, var(--cor4), transparent);
+    padding: 5px 0;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+main p{
+    font-size: 1.2rem;
+    text-align: justify;
+    text-indent: 30px; /*Espaçamento de primeira linha de parágrafo*/
+    margin: 15px 0;
+    
+}
+
+main img{
+    width: 30%;
+    border: 10px double #000000; /*borda: estilo expessura cor*/
+}
+
+iframe{
+    width: 90%;
+    border: 10px double #000000;
+    margin-bottom: 10px;    
+}
+
+pre{
+    font-size: 14px;
+}
+
+figcaption{
+    font-size: 10px;
+}
+
+aside{
+    background-color: var(--cor4);
+    padding: 20px 0;
+}
+
+aside > ul{
+    list-style-position: inside; /*Posição do marcador  da lista*/
+    text-align: justify; /*Alinhamento de texto justificado*/
+    padding-top: 10px; /*Espaçamento dentro da caixa para cima*/
+}
+
+aside h3{
+    background-color: var(--cor2);
+    padding: 10px;
+    margin: -20px -0.5px 0px -0.5px;
+}
+
+footer p{
+    font-size: 14px;
+    padding: 0px;
+    text-align: center;
+}
