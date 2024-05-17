@@ -1,14 +1,14 @@
 @charset "UTF-8";
 
 :root{
-    --cor1: #4E311F;
-    --cor2: #390D02;
-    --cor3: #5f3115;
-    --cor4: #8d5e41;
+    --cor1: #e4e4e4;
+    --cor2: #3b3938;
+    --cor3: #302e2d;
+    --cor4: #8b8b8b;
     --preto:#000000;
     
 }
-
+/*bbb5b1 */
 *{
     margin: 0;
     padding: 0;
@@ -23,7 +23,7 @@ body{
 }
 
 header{
-    background-image: linear-gradient(to top, var(--cor4), var(--cor3));/*direção do gradiente, corInicial, CorTerminal*/
+    background-image: linear-gradient(to top, var(--cor4), var(--preto));/*direção do gradiente, corInicial, CorTerminal*/
     min-height: 130px; /*altuura minima*/
     text-align: center;
     padding-top: 50PX; /*Espaço dentro da caixa de 50px para cima*/
@@ -37,7 +37,7 @@ margin-bottom: 20px; /*Espaçamento fora da caixa*/
 }
 
 header > p{
-    color: var(--preto);
+    color: var(--cor1);
 }
 
 nav{
@@ -91,17 +91,20 @@ main p{
 
 main img{
     width: 30%;
-    border: 10px double #000000; /*borda: estilo expessura cor*/
+    border: 10px none #000000; /*borda: estilo expessura cor*/
 }
 
 iframe{
     width: 90%;
     border: 10px double #000000;
-    margin-bottom: 10px;    
+    margin-bottom: 20px;
+    margin-top: 25px;
+   
 }
 
 pre{
     font-size: 14px;
+    padding-top: 10px;
 }
 
 figcaption{
@@ -110,7 +113,7 @@ figcaption{
 
 aside{
     background-color: var(--cor4);
-    padding: 20px 0;
+    padding: 20px 10px;
 }
 
 aside > ul{
@@ -128,5 +131,16 @@ aside h3{
 footer p{
     font-size: 14px;
     padding: 0px;
+    margin-top: 10px;
     text-align: center;
+}
+
+article h2{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+#obras img{
+    height: 100px;
+    width: 150px;
 }
